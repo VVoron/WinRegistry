@@ -40,12 +40,11 @@ namespace RegKeys
             if (RegistryList.SelectedItem != null)
             {
                 RegistryKey key = Registry.CurrentUser.OpenSubKey(Path.Combine("Software", RegistryList.SelectedItem.ToString()));
-                Dictionary<string, object> keyValuePairs;
                 RegTree.Items.Add(key.View.ToString());
-                using (var settingsRegKey = Registry.CurrentUser.OpenSubKey(Path.Combine("Software", namereg)))
+                using (var settingsRegKey = Registry.CurrentUser.OpenSubKey(Path.Combine("Software", RegistryList.SelectedItem.ToString())))
                 {
                     var valueNames = settingsRegKey.GetValueNames();
-                    keyValuePairs = valueNames.ToDictionary(name => name, settingsRegKey.GetValue);
+                    Dictionary<string, object>  keyValuePairs = valueNames.ToDictionary(name => name, settingsRegKey.GetValue);
                     foreach (var regkey in keyValuePairs)
                     {
                         RegTree.Items.Add(regkey.ToString() + settingsRegKey.GetValue(regkey.ToString()));
