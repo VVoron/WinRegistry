@@ -38,5 +38,10 @@ namespace RegKeys
             ValueOptions.Clear();
             NameOptions.Clear();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
