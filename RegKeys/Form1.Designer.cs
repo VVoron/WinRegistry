@@ -44,7 +44,7 @@
             this.Add_Reg.Name = "Add_Reg";
             this.Add_Reg.Size = new System.Drawing.Size(312, 51);
             this.Add_Reg.TabIndex = 0;
-            this.Add_Reg.Text = "Add Registry and Value";
+            this.Add_Reg.Text = "Добавить реестр";
             this.Add_Reg.UseVisualStyleBackColor = false;
             this.Add_Reg.Click += new System.EventHandler(this.Add_Reg_Click);
             // 
@@ -55,7 +55,7 @@
             this.GetRegVal.Name = "GetRegVal";
             this.GetRegVal.Size = new System.Drawing.Size(312, 51);
             this.GetRegVal.TabIndex = 1;
-            this.GetRegVal.Text = "Get Registry Value";
+            this.GetRegVal.Text = "Получить значения реестра";
             this.GetRegVal.UseVisualStyleBackColor = false;
             this.GetRegVal.Click += new System.EventHandler(this.GetRegVal_Click);
             // 
@@ -75,7 +75,7 @@
             this.DeleteReg.Name = "DeleteReg";
             this.DeleteReg.Size = new System.Drawing.Size(312, 51);
             this.DeleteReg.TabIndex = 3;
-            this.DeleteReg.Text = "Delete Registry";
+            this.DeleteReg.Text = "Удалить реестр";
             this.DeleteReg.UseVisualStyleBackColor = false;
             this.DeleteReg.Click += new System.EventHandler(this.DeleteReg_Click);
             // 
@@ -105,7 +105,7 @@
             this.Clear_RegTree.Name = "Clear_RegTree";
             this.Clear_RegTree.Size = new System.Drawing.Size(93, 23);
             this.Clear_RegTree.TabIndex = 6;
-            this.Clear_RegTree.Text = "Clear";
+            this.Clear_RegTree.Text = "Очистить";
             this.Clear_RegTree.UseVisualStyleBackColor = false;
             this.Clear_RegTree.Click += new System.EventHandler(this.Clear_RegTree_Click);
             // 
